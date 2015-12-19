@@ -81,9 +81,9 @@ let NERDTreeCaseSensitiveSort = 1
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | end
 autocmd VimEnter * NERDTree
 " let mouse in right side when start
+autocmd VimEnter * NERDTree
 wincmd w
 autocmd VimEnter * wincmd w
-autocmd vimenter * if !argc() | NERDTree | endif
 
 "------taglist
 Bundle 'vim-scripts/taglist.vim'
@@ -192,25 +192,25 @@ let g:pymode_rope = 0
 let g:pymode_doc = 1
 let g:pymode_doc_key = '<S-k>'
 " "Linting
- let g:pymode_lint = 1
- let g:pymode_lint_checker = "pyflakes,pep8,pep257 "
- let g:pymode_lint_ignore = "E226"
+let g:pymode_lint = 1
+let g:pymode_lint_checker = "pyflakes,pep8,pep257 "
+let g:pymode_lint_ignore = "E226"
 let g:pymode_lint_on_write = 1
- let g:pymode_lint_message = 0
+let g:pymode_lint_message = 0
 " " Auto check on save
- let g:pymode_lint_write = 1
+let g:pymode_lint_write = 1
 " " Support virtualenv
- let g:pymode_virtualenv = 1
+let g:pymode_virtualenv = 1
 " " Enable breakpoints plugin
 let g:pymode_breakpoint = 1
 let g:pymode_breakpoint_bind ='<F4>'
 " run vim 
 let g:pymode_run = 1
 " " syntax highlighting
- let g:pymode_syntax = 1
- let g:pymode_syntax_all = 1
- let g:pymode_syntax_indent_errors = g:pymode_syntax_all
- let g:pymode_syntax_space_errors = g:pymode_syntax_all
+let g:pymode_syntax = 1
+let g:pymode_syntax_all = 1
+let g:pymode_syntax_indent_errors = g:pymode_syntax_all
+let g:pymode_syntax_space_errors = g:pymode_syntax_all
 
 "------自动插入模板
 Bundle 'Shougo/neosnippet'
