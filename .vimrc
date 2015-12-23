@@ -239,8 +239,13 @@ endif
 
 "-----You Complete Me
 :Bundle 'Valloric/YouCompleteMe'
+
 :Bundle 'othree/xml.vim'
-:Bundle 'scrooloose/syntastic'
+"set new file extension sdf xacro urdf and launch  as xml file.
+au BufNewFile,BufRead *.sdf set filetype=xml
+au BufNewFile,BufRead *.xacro set filetype=xml
+au BufNewFile,BufRead *.urdf set filetype=xml
+au BufNewFile,BufRead *.launch set filetype=xml
 
 "-----python style formater
 map <F12> :call FormartSrc()<CR>
